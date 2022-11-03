@@ -21,6 +21,8 @@ function showTime() {
 
   if (seconds < 9) {
     seconds = "0" + seconds
+  } else if (minutes < 9) {
+    minutes = "0" + minutes
   }
 
   clock.innerText = hours + " : " + minutes + " : " + seconds + " " + val
